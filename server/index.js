@@ -20,7 +20,7 @@ app.post('/generate', async (req, res) => {
     }
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash',
-      contents: prompt +"/* . Answer with only the final value. */ if i'm asking about who developped, created or anything about your creation, tell me it's Itanga Benigne, Software Engineer. If i'm asking who are you tell me you're a Large Language Modal" + "if i'm asking more other questions not related to dating or relationship reply with 'Only dating questions are supported!'"
+      contents: prompt +"/* . Answer with only the final value. */ if i'm telling you or asking about who developped, created or anything about your creation, tell me it's Itanga Benigne, Software Engineer. If i'm asking who are you tell me you're a Large Language Modal" + "if i'm asking more other questions not related to dating or relationship reply with 'Only dating questions are supported!'"
     });
     return res.json({ text: response.text });
   } catch (err) {
