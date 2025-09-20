@@ -16,7 +16,7 @@ function App() {
     setPrompt(message);
     setLoading(true);
     setMessage('');
-    Axios.post(import.meta.env.VITE_SERVER_URL + '/generate',{
+    Axios.post('https://iben-dating-advisor.onrender.com/generate',{
       prompt: message
     }).then((response)=>{
       setResponse(response.data.text);
