@@ -1,0 +1,91 @@
+.AppContainer {
+  height: 98vh;
+  width: 50vw;
+  background-color: white;
+  min-width: 300px;
+  max-width: 1020px;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.AppContainer section.header {
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0px 12px 5px -10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.AppContainer section.header h1 {
+  margin: 0;
+  width: fit-content;
+  font-size: large;
+}
+.AppContainer div.userPrompt {
+  align-self: flex-end;
+  margin: 20px;
+  position: relative;
+}
+.AppContainer div.userPrompt span {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+.AppContainer div.response {
+  align-self: flex-start;
+  margin: 20px;
+  position: relative;
+  color: gray;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+/* .AppContainer div.response span {
+  
+  max-width: 90%;
+} */
+.AppContainer section.inputContainer {
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0px -12px 5px -10px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+  position: relative;
+  justify-content: center;
+}
+.AppContainer section.inputContainer input {
+  width: 75%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+.animateSpin {
+  border: 2px solid grey;
+  border-top: 2px solid black;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  align-self: flex-end;
+  margin: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
